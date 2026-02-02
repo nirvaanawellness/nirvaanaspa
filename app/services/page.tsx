@@ -13,48 +13,6 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* ---------------- NAVBAR ---------------- */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#d4af37]/20">
-        <div className="relative w-full h-[86px]">
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-4">
-            <Image
-              src="/pic.png"
-              alt="Nirvaana Wellness & Spa"
-              width={220}
-              height={90}
-              priority
-              className="object-contain drop-shadow-[0_0_16px_rgba(212,175,55,0.45)]"
-            />
-
-            <div className="hidden md:flex items-center gap-3 ml-2">
-              <a href="tel:+919520034538" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:bg-[#d4af37]/10 hover:scale-110 transition">
-                <Phone size={18} />
-              </a>
-
-              <a href="mailto:nirvaanabysunrise@gmail.com" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:bg-[#d4af37]/10 hover:scale-110 transition">
-                <Mail size={18} />
-              </a>
-
-              <a href="https://wa.me/919520034538" target="_blank" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:bg-[#d4af37]/10 hover:scale-110 transition">
-                <MessageCircle size={18} />
-              </a>
-            </div>
-          </div>
-
-          <nav className="absolute right-10 top-1/2 -translate-y-1/2 flex gap-10 text-sm uppercase tracking-[0.28em] text-[#f5d58a]">
-            {["Home", "About", "Services", "Partnership", "Contact"].map((item) => (
-              <Link
-                key={item}
-                href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="relative hover:text-[#d4af37] transition after:absolute after:left-0 after:-bottom-2 after:h-[1px] after:w-0 after:bg-[#d4af37] after:transition-all hover:after:w-full"
-              >
-                {item}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </header>
-      
       {/* ---------------- HERO ---------------- */}
       <section className="relative h-[100vh] w-full bg-black mt-[0px]">
 

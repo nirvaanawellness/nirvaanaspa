@@ -5,9 +5,11 @@ import Link from "next/link";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import BookSpaModal from "@/app/components/BookSpaModal";
+import FeedbackModal from "@/app/components/FeedbackModal";
 
 export default function ServicesPage() {
   const [open, setOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
   return (
     <>
@@ -52,20 +54,18 @@ export default function ServicesPage() {
           </nav>
         </div>
       </header>
+      
+      {/* ---------------- HERO ---------------- */}
+      <section className="relative h-[100vh] w-full bg-black mt-[0px]">
 
-        <div className="h-15" id="home"></div>
+      <div
+          className="absolute inset-0 bg-no-repeat bg-contain bg-center"
+          style={{ backgroundImage: "url('/spa3.jpg')" }}
+      />
 
-        {/* ---------------- HERO ---------------- */}
-        <section className="relative h-[80vh] w-full bg-black mt-[86px]">
+      <div className="absolute inset-0 bg-black/50" />
 
-        <div
-            className="absolute inset-0 bg-no-repeat bg-contain bg-center"
-            style={{ backgroundImage: "url('/spa3.jpg')" }}
-        />
-
-        <div className="absolute inset-0 bg-black/50" />
-
-        </section>
+      </section>
 
 
 
@@ -157,6 +157,27 @@ export default function ServicesPage() {
             requests or misconduct will result in immediate termination of service and may be reported.
           </p>
         </section>
+
+        {/* ---------------- FLOATING WHATSAPP ---------------- */}
+        <a
+          href="https://wa.me/919520034538"
+          target="_blank"
+          className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
+        >
+          Appointment
+        </a>
+
+        <button
+          onClick={() => setFeedbackOpen(true)}
+          className="fixed bottom-20 right-6 bg-black border border-[#d4af37] text-[#d4af37] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#d4af37]/20 transition z-50"
+          >
+          Feedback
+        </button>
+        <FeedbackModal
+          open={feedbackOpen}
+          onClose={() => setFeedbackOpen(false)}
+        />
+                
 
         {/* FOOTER */}
         <footer className="py-10 border-t border-[#d4af37]/20 text-center text-[#c9b26d] text-sm">

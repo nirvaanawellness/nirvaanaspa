@@ -8,6 +8,7 @@ import { Phone, Mail, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
+import FeedbackModal from "@/app/components/FeedbackModal";
 
 
 function BookSpaSection() {
@@ -172,9 +173,11 @@ City: ${form.city}
 
 export default function Home() {
   const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
   return (
     <>
+
     {/* TOP NAVBAR */}
     <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#d4af37]/20">
       <div className="relative w-full h-[86px]">
@@ -246,9 +249,6 @@ export default function Home() {
 
       </div>
     </header>
-    
-    <div className="h-15" id="home"></div>
-
 
       {/* HERO IMAGE SLIDER */}
       <section className="w-full bg-black">
@@ -326,16 +326,27 @@ export default function Home() {
       {/* MAIN SITE */}
       <main className="bg-[#0b0604] text-[#f5d58a] min-h-screen font-[serif]">
 
-        {/* FLOATING WHATSAPP */}
+        {/* ---------------- FLOATING WHATSAPP ---------------- */}
         <a
           href="https://wa.me/919520034538"
           target="_blank"
-          className="fixed bottom-6 right-6 z-50 bg-[#d4af37] text-black px-6 py-3 rounded-full shadow-xl hover:scale-105 transition text-lg font-semibold"
+          className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
         >
-           Appointment
+          Appointment
         </a>
 
+        <button
+          onClick={() => setFeedbackOpen(true)}
+          className="fixed bottom-20 right-6 bg-black border border-[#d4af37] text-[#d4af37] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#d4af37]/20 transition z-50"
+        >
+          Feedback
+        </button>
+        <FeedbackModal
+          open={feedbackOpen}
+          onClose={() => setFeedbackOpen(false)}
+        />
 
+      
         {/* TESTIMONIALS */}
         <section className="py-24 bg-[#120b07] px-6 text-center">
           <h2 className="text-4xl font-bold mb-12">Guest Experiences</h2>

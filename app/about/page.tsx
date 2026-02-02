@@ -135,11 +135,9 @@ export default function AboutPage() {
         </div>
       </header>
 
-      <div className="h-[86px]" />
-
       {/* ---------------- HERO ---------------- */}
       
-      <section className="relative h-[80vh] w-full">
+      <section className="relative h-[130vh] w-full">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/about-hero.jpg')" }}
@@ -228,7 +226,6 @@ export default function AboutPage() {
 
       <div className="w-32 h-[2px] bg-[#d4af37] mx-auto my-24" />
 
-      {/* ---------------- CONTACT + FAQ ---------------- */}
       {/* ---------------- CONTACT + DISCLAIMER (TWO COLUMNS) ---------------- */}
         <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 pb-24">
 
@@ -307,6 +304,8 @@ export default function AboutPage() {
       >
         Appointment
       </a>
+
+        
 
     </main>
   );

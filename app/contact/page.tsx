@@ -1,4 +1,5 @@
 "use client";
+import FeedbackModal from "@/app/components/FeedbackModal";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -9,14 +10,13 @@ export default function ContactPage() {
     useState<"idle" | "sending" | "success">("idle");
 
   const [cvUploaded, setCvUploaded] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
   return (
     <>
       {/* ================= HEADER ================= */}
       <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#d4af37]/20">
-        <div className="relative w-full h-[86px] max-w-7xl mx-auto">
-
-          {/* Logo + Icons */}
+        <div className="relative w-full h-[86px]">
           <div className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-5">
             <Image
               src="/pic.png"
@@ -28,19 +28,18 @@ export default function ContactPage() {
             />
 
             <div className="flex items-center gap-3">
-              <a href="tel:+919520034538" className="icon-btn">
+              <a href="tel:+919520034538" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:scale-110 transition">
                 <Phone size={18} />
               </a>
-              <a href="mailto:nirvaanabysunrise@gmail.com" className="icon-btn">
+              <a href="mailto:nirvaanabysunrise@gmail.com" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:scale-110 transition">
                 <Mail size={18} />
               </a>
-              <a href="https://wa.me/919520034538" target="_blank" className="icon-btn">
+              <a href="https://wa.me/919520034538" target="_blank" className="p-2 rounded-full border border-[#d4af37]/40 text-[#d4af37] hover:scale-110 transition">
                 <MessageCircle size={18} />
               </a>
             </div>
           </div>
 
-          {/* Navigation */}
           <nav className="absolute right-10 top-1/2 -translate-y-1/2 flex gap-10 text-sm uppercase tracking-[0.28em] text-[#f5d58a]">
             {["Home", "About", "Services", "Partnership", "Contact"].map((item) => (
                 <Link
@@ -60,10 +59,10 @@ export default function ContactPage() {
       </header>
 
       {/* Spacer */}
-      <div className="h-[86px]" />
+      <div className="h-[0px]" />
 
       {/* ================= MAIN ================= */}
-      <main className="bg-[#0b0604] text-[#f5d58a] px-6 py-8">
+      <main className="bg-[#0b0604] text-[#f5d58a] px-1 py-8">
         <div className="max-w-7xl mx-auto">
 
           {/* Upcoming Projects */}
@@ -220,6 +219,27 @@ export default function ContactPage() {
           <br />
           GSTIN: 09AIHPB3271B1ZR
         </footer>
+
+        {/* ---------------- FLOATING WHATSAPP ---------------- */}
+        <a
+          href="https://wa.me/919520034538"
+          target="_blank"
+          className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
+        >
+          Appointment
+        </a>
+
+        <button
+          onClick={() => setFeedbackOpen(true)}
+          className="fixed bottom-20 right-6 bg-black border border-[#d4af37] text-[#d4af37] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#d4af37]/20 transition z-50"
+          >
+          Feedback
+        </button>
+        <FeedbackModal
+          open={feedbackOpen}
+          onClose={() => setFeedbackOpen(false)}
+        />
+        
       </main>
 
       {/* ================= SHARED STYLES ================= */}

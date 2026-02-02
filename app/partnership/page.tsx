@@ -53,27 +53,26 @@ export default function Partnership() {
         </div>
       </header>
 
-      <div className="h-15" id="home"></div>
 
-        {/* ---------------- HERO IMAGE ONLY ---------------- */}
-        <section className="relative h-[80vh] w-full bg-black mt-[86px]">
-        <div
-            className="absolute inset-0 bg-no-repeat bg-contain bg-center"
-            style={{ backgroundImage: "url('/proposal.jpg')" }}
-        />
-        </section>
+      {/* ---------------- HERO IMAGE ONLY ---------------- */}
+      <section className="relative h-[80vh] w-full bg-black mt-[0px]">
+      <div
+          className="absolute inset-0 bg-no-repeat bg-contain bg-center"
+          style={{ backgroundImage: "url('/proposal.jpg')" }}
+      />
+      </section>
 
-        {/* ---------------- HERO TEXT BELOW ---------------- */}
-        <section className="bg-[#0b0604] py-20 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-serif text-[#f5d58a] mb-6">
-            Luxury Spa Partnership Program
-        </h1>
+      {/* ---------------- HERO TEXT BELOW ---------------- */}
+      <section className="bg-[#0b0604] py-20 px-6 text-center">
+      <h1 className="text-4xl md:text-5xl font-serif text-[#f5d58a] mb-6">
+          Luxury Spa Partnership Program
+      </h1>
 
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#e8d9a8] leading-relaxed">
-            Transform your spa space into a professionally managed, revenue-generating
-            wellness destination — without operational burden.
-        </p>
-        </section>
+      <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#e8d9a8] leading-relaxed">
+          Transform your spa space into a professionally managed, revenue-generating
+          wellness destination — without operational burden.
+      </p>
+      </section>
 
 
 

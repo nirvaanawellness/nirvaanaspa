@@ -86,3 +86,29 @@ select option:hover {
   background-color: #f7e7b4;
   color: #120b07;
 }
+
+
+/* FORCE mobile behavior */
+.main-nav {
+  display: none;
+  gap: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #f5d58a;
+}
+
+/* Hamburger hidden by default */
+.hamburger-btn {
+  display: block;
+}
+
+/* Desktop only */
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+}

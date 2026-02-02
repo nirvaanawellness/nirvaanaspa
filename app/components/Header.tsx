@@ -31,7 +31,7 @@ export default function Header() {
         />
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-10 text-sm uppercase tracking-[0.28em] text-[#f5d58a]">
+        <nav className="main-nav">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -42,6 +42,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
 
         {/* Right Section (Icons + Hamburger) */}
         <div className="flex items-center gap-3">
@@ -59,13 +60,14 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Hamburger (mobile only) */}
           <button
-            className="md:hidden text-[#d4af37] ml-2"
+            className="hamburger-btn text-[#d4af37]"
             onClick={() => setOpen(true)}
+            aria-label="Open menu"
           >
-            <Menu size={32} />
+            <Menu size={28} />
           </button>
+
         </div>
       </div>
 

@@ -24,8 +24,8 @@ export default function Header() {
         <Image
           src="/pic.png"
           alt="Nirvaana Wellness & Spa"
-          width={200}
-          height={80}
+          width={180}
+          height={70}
           className="object-contain"
           priority
         />
@@ -43,23 +43,33 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Desktop Icons */}
-        <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+919520034538" className="icon-btn"><Phone size={18} /></a>
-          <a href="mailto:nirvaanabysunrise@gmail.com" className="icon-btn"><Mail size={18} /></a>
-          <a href="https://wa.me/919520034538" className="icon-btn"><MessageCircle size={18} /></a>
-        </div>
+        {/* Right Section (Icons + Hamburger) */}
+        <div className="flex items-center gap-3">
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-[#d4af37]"
-          onClick={() => setOpen(true)}
-        >
-          <Menu size={32} />
-        </button>
+          {/* Contact Icons (visible on mobile + desktop) */}
+          <div className="flex items-center gap-2">
+            <a href="tel:+919520034538" className="icon-btn">
+              <Phone size={18} />
+            </a>
+            <a href="mailto:nirvaanabysunrise@gmail.com" className="icon-btn">
+              <Mail size={18} />
+            </a>
+            <a href="https://wa.me/919520034538" className="icon-btn">
+              <MessageCircle size={18} />
+            </a>
+          </div>
+
+          {/* Hamburger (mobile only) */}
+          <button
+            className="md:hidden text-[#d4af37] ml-2"
+            onClick={() => setOpen(true)}
+          >
+            <Menu size={32} />
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Fullscreen Menu */}
+      {/* Mobile Menu Overlay */}
       {open && (
         <div className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center gap-10 text-[#f5d58a] text-2xl uppercase tracking-widest">
           <button

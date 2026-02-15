@@ -19,8 +19,10 @@ export default function Header() {
   return (
     <>
       {/* HEADER BAR */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-[#d4af37]/20">
-        <div className="max-w-7xl mx-auto h-[86px] px-4 flex items-center justify-between">
+      <header className="fixed top-0 left-0 w-full h-[86px] z-50 bg-black/90 backdrop-blur-md border-b border-[#d4af37]/20">
+
+        <div className="max-w-7xl mx-auto h-full px-4 flex items-center justify-between">
+
 
           {/* LOGO */}
           <Image

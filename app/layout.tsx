@@ -33,7 +33,8 @@ export default function RootLayout({
           Mobile header is taller because logo + icons wrap.
           Desktop header stays 86px.
         */}
-        <main className="pt-[130px] md:pt-[86px]">
+        <main className="pt-[86px]">
+
           {children}
         </main>
 

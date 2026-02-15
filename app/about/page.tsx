@@ -89,12 +89,15 @@ export default function AboutPage() {
 
       {/* ---------------- HERO ---------------- */}
       
-      <section className="relative h-[130vh] w-full">
+      <section className="relative h-[100vh] w-full">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/about-hero.jpg')" }}
+          style={{
+                  backgroundImage: "url('/about-hero.jpg')",
+                  backgroundPosition: "100% 0%", // X Y
+                }}
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
       </section>
 
       <div className="h-15" id="home"></div>

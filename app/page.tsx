@@ -328,7 +328,7 @@ export default function Home() {
 
                 <p className="text-[#e8d9a8] leading-relaxed text-lg">
                   NIRVAANA Wellness & Spa operates as a strictly professional therapeutic wellness brand.
-                  We do not provide any sexual, escort, or inappropriate services of any kind.
+                  We do not provide any illegal services of any kind.
                   Any indecent requests, misconduct, or harassment toward our staff will result in
                   immediate termination of service and may be reported to hotel management and local authorities.
                 </p>

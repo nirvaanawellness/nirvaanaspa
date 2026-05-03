@@ -100,7 +100,7 @@ export default function Partnership() {
             Contact & Bookings
             </h3>
 
-            <p className="text-[#e8d9a8] mb-3">📞 +91-95200-34538</p>
+            <p className="text-[#e8d9a8] mb-3">📞 +91-88009-77146</p>
             <p className="text-[#e8d9a8] mb-3">📧 nirvaanabysunrise@gmail.com</p>
             <p className="text-[#e8d9a8] mb-6">
             📍 Serving premium hotels & resorts across India
@@ -108,7 +108,7 @@ export default function Partnership() {
 
             {/* WhatsApp button */}
             <a
-            href="https://wa.me/919520034538"
+            href="https://wa.me/918800977146"
             target="_blank"
             className="inline-block mt-4 bg-[#d4af37] text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition"
             >

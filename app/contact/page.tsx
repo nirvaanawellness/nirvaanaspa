@@ -39,7 +39,7 @@ export default function ContactPage() {
               <h2 className="text-4xl font-serif mb-8">Contact Us</h2>
 
               <p className="info-line">
-                📞 <a href="tel:+919520034538">+91-95200-34538</a>
+                📞 <a href="tel:+918800977146">+91-88009-77146</a>
               </p>
             <br/>
               <p className="info-line">
@@ -54,7 +54,7 @@ export default function ContactPage() {
               </p>
 
               <a
-                href="https://wa.me/919520034538"
+                href="https://wa.me/918800977146"
                 target="_blank"
                 className="primary-btn"
               >
@@ -179,7 +179,7 @@ export default function ContactPage() {
 
         {/* ---------------- FLOATING WHATSAPP ---------------- */}
         <a
-          href="https://wa.me/919520034538"
+          href="https://wa.me/918800977146"
           target="_blank"
           className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
         >

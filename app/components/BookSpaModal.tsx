@@ -50,7 +50,7 @@ Email: ${form.email}
 City: ${form.city}`;
 
     window.open(
-      `https://wa.me/919520034538?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/918800977146?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
 

@@ -52,13 +52,13 @@ export default function Header() {
 
             {/* DESKTOP ICONS */}
             <div className="hidden md:flex items-center gap-2">
-              <a href="tel:+919520034538" className="icon-btn">
+              <a href="tel:+918800977146" className="icon-btn">
                 <Phone size={18} />
               </a>
               <a href="mailto:nirvaanabysunrise@gmail.com" className="icon-btn">
                 <Mail size={18} />
               </a>
-              <a href="https://wa.me/919520034538" className="icon-btn">
+              <a href="https://wa.me/918800977146" className="icon-btn">
                 <MessageCircle size={18} />
               </a>
             </div>
@@ -110,13 +110,13 @@ export default function Header() {
 
             {/* CONTACT ICONS */}
             <div className="flex justify-center gap-8 pb-16">
-              <a href="tel:+919520034538" className="icon-btn">
+              <a href="tel:+918800977146" className="icon-btn">
                 <Phone size={22} />
               </a>
               <a href="mailto:nirvaanabysunrise@gmail.com" className="icon-btn">
                 <Mail size={22} />
               </a>
-              <a href="https://wa.me/919520034538" className="icon-btn">
+              <a href="https://wa.me/918800977146" className="icon-btn">
                 <MessageCircle size={22} />
               </a>
             </div>

@@ -55,7 +55,7 @@ City: ${form.city}
 
     // WHATSAPP
     window.open(
-      `https://wa.me/919520034538?text=${encodeURIComponent(message)}`,
+      `https://wa.me/918800977146?text=${encodeURIComponent(message)}`,
       "_blank"
     );
 
@@ -255,7 +255,7 @@ export default function Home() {
 
         {/* ---------------- FLOATING WHATSAPP ---------------- */}
         <a
-          href="https://wa.me/919520034538"
+          href="https://wa.me/918800977146"
           target="_blank"
           className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
         >
@@ -298,7 +298,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-[#e8d9a8] text-lg mb-4">
-                  📞 <a className="text-[#d4af37]" href="tel:+919520034538">+91-95200-34538</a>
+                  📞 <a className="text-[#d4af37]" href="tel:+918800977146">+91-88009-77146</a>
                 </p>
 
                 <p className="text-[#e8d9a8] text-lg mb-4">
@@ -312,7 +312,7 @@ export default function Home() {
                 </p>
 
                 <a
-                  href="https://wa.me/919520034538"
+                  href="https://wa.me/918800977146"
                   target="_blank"
                   className="inline-block bg-[#d4af37] text-black px-10 py-4 rounded-full font-semibold hover:scale-105 transition"
                 >

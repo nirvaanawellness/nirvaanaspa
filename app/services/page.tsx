@@ -26,8 +26,6 @@ export default function ServicesPage() {
       </section>
 
 
-
-
       <main className="bg-[#0b0604] text-[#f5d58a] font-[serif]">
 
         {/* GOLD SEPARATOR */}
@@ -118,7 +116,7 @@ export default function ServicesPage() {
 
         {/* ---------------- FLOATING WHATSAPP ---------------- */}
         <a
-          href="https://wa.me/919520034538"
+          href="https://wa.me/918800977146"
           target="_blank"
           className="fixed bottom-6 right-6 bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition z-50"
         >
